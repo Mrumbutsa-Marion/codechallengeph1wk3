@@ -17,7 +17,7 @@
 
 # **Description**
 
-This is the third code challenge in javaScript where we learned about json server, Dom manipulation and postman. The learning goal of this code challenge is to Implement a mini movie web app to practice on DOM, Events, and Server communications.One will create and work Flatdango Web Application. Flatdango is a web application that allows users to purchase movie tickets from the Flatiron Movie Theater. The application provides a user-friendly interface where users can browse available movies, select showtimes, and make ticket purchases.
+This is the third code challenge in javaScript where we learned about json server, Dom manipulation and postman. The learning goal of this code challenge is to Implement a mini movie web app to practice on DOM, Events, and Server communications.One will create and work Flatdango Web Application. Flatdango is a web application that allows users to purchase movie tickets from the Flatiron Movie Theater. The application provides a user-friendly interface where n browse available movies, select showtimes, and make ticket purchases.
 
 # **Installation Requirement**
 
