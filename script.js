@@ -26,3 +26,36 @@ fetch('http://localhost:3000/films/1')
 .catch(error => {
     console.log('Error;', error);
 });
+
+
+
+//Get fetch
+fetch('http://localhost:3000/films')
+.then(response => response.json())
+.then(movies => {
+    
+    // Looping through the movies and create li elements with movie details
+   // const myFilmList = document.getElementById('myFilmList');
+   let filmList = document.getElementById('filmList');
+    movies.forEach(movie => {
+        let liElement = document.createElement('li');
+        liElement.classList.add('filmitem');
+        liElement.innerHTML = `
+        <img src="${movie.poster}" alt="Movie Poster">
+          <h3>${movie.title}</h3>
+          <p>Runtime: ${movie.runtime} minutes</p>
+          <p>Showtime: ${movie.showtime}</p>
+          <p>${movie.description}</p>
+          
+        `;
+        //<img src="${movie.poster}" alt="Movie Poster">
+        filmList.append(liElement);
+      });
+    
+})
+.catch(error => {
+    console.log('Error;', error);
+});
+let ulElement = document.createElement('ul')
+    ulElement.id = 'filmList'
+    mainSection.append(ulElement)
